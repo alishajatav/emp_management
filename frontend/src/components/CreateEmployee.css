@@ -1,0 +1,116 @@
+/* registrationform.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+form {
+    background: white;
+    padding: 30px; /* Increased padding for a spacious feel */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px; /* Space below the heading */
+    font-weight: 600; /* Bolder text */
+}
+
+input {
+    width: 100%;
+    padding: 12px; /* Increased padding for comfort */
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Slightly more rounded */
+    font-size: 16px; /* Larger text for easier readability */
+    transition: border-color 0.3s ease; /* Smooth border transition */
+}
+
+input:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Shadow effect on focus */
+}
+
+span {
+    color: red;
+    font-size: 0.9em;
+}
+
+button {
+    width: 100%;
+    padding: 12px; /* Increased padding */
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px; /* More rounded corners */
+    cursor: pointer;
+    font-size: 16px; /* Larger button text */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+button:active {
+    transform: translateY(0); /* Return to original position on click */
+}
+
+/* Optional: Add a footer for additional links */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group input,
+.form-group select {
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.form-group label {
+    margin-right: 10px;
+}
+.form-group img {
+    margin-left: 20px;
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.gender-options {
+    display: flex;
+    align-items: center; /* Center the items vertically */
+}
+
+.gender-options label {
+    margin-right: 20px; /* Add spacing between radio buttons */
+}
+
+.error {
+    color: red;
+    font-size: 0.875em;
+}

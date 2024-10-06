@@ -1,0 +1,58 @@
+/* src/navbar/NavBar.css */
+nav {
+    background-color: #007bff; /* Primary color */
+    padding: 8px 15px; /* Reduced padding for a smaller height */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex; /* Enable flexbox */
+    align-items: center; /* Center items vertically */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around; /* Space items evenly */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    width: 100%; /* Make ul take full width */
+}
+.username-display {
+    font-weight: bold;
+    margin-right: 20px; /* Adjust margin as needed */
+    color: white;
+}
+
+
+nav li {
+    margin: 0 10px; /* Adjust spacing between items */
+}
+
+
+a {
+    text-decoration: none; /* Remove underline */
+    color:white; /* Default link color */
+    font-weight: 500; /* Slightly bold */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+a:hover {
+    
+    color:#f6f5f9; /* Default link color */
+    
+}
+.active-link {
+    font-weight: bold; /* Make active link bold */
+    color: darkblue; /* Change color of the active link */
+    border-bottom: 2px solid darkblue; /* Underline for active link */
+}
+nav button {
+    background: none;
+    border: none;
+    color: #ffffff; /* White text for button */
+    cursor: pointer;
+    font-weight: bold; /* Bold text for button */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+nav button:hover {
+    color: #11057c; /* Change color on hover */
+}

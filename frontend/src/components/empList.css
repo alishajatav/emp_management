@@ -1,0 +1,132 @@
+/* empList.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #007bff;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Add this to your CSS to ensure the sort controls align well */
+.sort-controls {
+    display: flex;
+    align-items: center;
+}
+
+
+.create-employee {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.create-employee:hover {
+    background-color: #0056b3;
+}
+
+/* Search Bar Styles */
+.search-bar {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+/* Action Button Styles */
+button {
+    padding: 6px 10px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #dc3545;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c82333;
+}
+a{
+    color: #2623c8;
+}
+/* Pagination Styles */
+.pagination {
+    display: flex; /* Use flexbox to arrange children in a row */
+    justify-content: center; /* Center the pagination buttons */
+    margin-top: 20px; /* Add some margin for spacing */
+}
+.pagination span {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.pagination .active {
+    font-weight: bold;
+    text-decoration: underline; /* Add other styles as needed */
+    color: blue; /* Change color for visibility */
+}
+
+.pagination button {
+    margin: 0 5px; /* Add some space between buttons */
+    padding: 10px 15px; /* Add padding for a better look */
+    cursor: pointer; /* Change cursor on hover */
+    border: 1px solid #007bff; /* Border style */
+    background-color: #ffffff; /* Background color */
+    color: #007bff; /* Text color */
+}
+
+.pagination button.active {
+    background-color: #007bff; /* Active button background */
+    color: #ffffff; /* Active button text color */
+}
+
+.pagination button:hover {
+    background-color: #0056b3; /* Background color on hover */
+    color: #ffffff; /* Text color on hover */
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-bar {
+        margin-top: 10px;
+    }
+
+    table {
+        font-size: 14px; /* Smaller font size on mobile */
+    }
+}
